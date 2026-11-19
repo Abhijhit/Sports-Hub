@@ -1,0 +1,141 @@
+/* REGISTRATION PAGE */
+
+.register-container {
+    width: 1050px;
+    min-height: 650px;
+    display: flex;
+    background: #151f32;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.4);
+    margin: 20px auto;
+}
+
+.register-right {
+    width: 60%;
+    padding: 35px 40px;
+    color: white;
+}
+
+.register-box {
+    width: 100%;
+}
+
+.register-box h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.register-box .subtitle {
+    color: #9baabe;
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: flex;
+    gap: 18px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    background: #243147;
+    border: 1px solid #34445e;
+    border-radius: 7px;
+    color: white;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #00c6a7;
+}
+
+.form-group select option {
+    background: #243147;
+    color: white;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 10px 0 20px;
+    font-size: 13px;
+    color: #b5c1d1;
+}
+
+.terms input {
+    accent-color: #00c6a7;
+}
+
+.terms label {
+    cursor: pointer;
+}
+
+.register-box button {
+    width: 100%;
+    padding: 13px;
+    background: #00c6a7;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-box button:hover {
+    background: #00a98f;
+}
+
+#registerMessage {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+.register-login {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 13px;
+    color: #9baabe;
+}
+
+.register-login a {
+    color: #00c6a7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 768px) {
+
+    .register-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .register-container .left-section,
+    .register-right {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+}
